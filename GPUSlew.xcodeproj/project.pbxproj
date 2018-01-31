@@ -11,6 +11,8 @@
 		1AE5A23F200EAE7800F42C15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AE5A23E200EAE7800F42C15 /* Assets.xcassets */; };
 		1AE5A242200EAE7800F42C15 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AE5A240200EAE7800F42C15 /* MainMenu.xib */; };
 		1AE5A245200EAE7800F42C15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE5A244200EAE7800F42C15 /* main.m */; };
+		1AE5A24E200EAE9B00F42C15 /* MetalRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE5A24D200EAE9B00F42C15 /* MetalRenderer.m */; };
+		1AE5A250200EAF9300F42C15 /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1AE5A24F200EAF9300F42C15 /* Shader.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,9 @@
 		1AE5A243200EAE7800F42C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AE5A244200EAE7800F42C15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1AE5A246200EAE7800F42C15 /* GPUSlew.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GPUSlew.entitlements; sourceTree = "<group>"; };
+		1AE5A24C200EAE9B00F42C15 /* MetalRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalRenderer.h; sourceTree = "<group>"; };
+		1AE5A24D200EAE9B00F42C15 /* MetalRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalRenderer.m; sourceTree = "<group>"; };
+		1AE5A24F200EAF9300F42C15 /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,9 @@
 			children = (
 				1AE5A23B200EAE7800F42C15 /* AppDelegate.h */,
 				1AE5A23C200EAE7800F42C15 /* AppDelegate.m */,
+				1AE5A24C200EAE9B00F42C15 /* MetalRenderer.h */,
+				1AE5A24D200EAE9B00F42C15 /* MetalRenderer.m */,
+				1AE5A24F200EAF9300F42C15 /* Shader.metal */,
 				1AE5A23E200EAE7800F42C15 /* Assets.xcassets */,
 				1AE5A240200EAE7800F42C15 /* MainMenu.xib */,
 				1AE5A243200EAE7800F42C15 /* Info.plist */,
@@ -135,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AE5A250200EAF9300F42C15 /* Shader.metal in Sources */,
 				1AE5A245200EAE7800F42C15 /* main.m in Sources */,
 				1AE5A23D200EAE7800F42C15 /* AppDelegate.m in Sources */,
+				1AE5A24E200EAE9B00F42C15 /* MetalRenderer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
